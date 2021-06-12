@@ -3,24 +3,96 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#3B82F6" />
     <link rel="stylesheet" href="style.css" />
     <title>Tailwind App</title>
   </head>
   <body>
-    <nav class="h-20 w-full bg-blue-500 flex">
+    <nav class="flex xs320:h-14 px-4 justify-between h-20 w-full bg-blue-500">
       <img
         src="./img/logo_transparent.png"
         alt="logo"
-        class="object-cover w-64 h-20 ml-10"
+        class="object-cover xs320:w-1/3 border border-black bg-no-repeat bg-center xs320:h-14"
       />
-      <ul class="flex flex-row uppercase my-auto">
-        <li class="px-10">News</li>
-        <li class="px-10">Services</li>
-        <li class="px-10">About</li>
-        <li class="px-10">Contact Us</li>
-        <li class="px-10">Login</li>
-        <li class="px-10">Sign Up</li>
-      </ul>
+      <div class="text-3xl border border-black my-auto align-middle">
+        &#9776;
+      </div>
     </nav>
+    <ul
+      class="uppercase my-auto font-medium tracking-wider bg-yellow-800 border border-black xs320:block text-center text-xs tracking-widest text-gray-700"
+    >
+      <li class="cursor-pointer border-b py-2">News</li>
+      <li class="cursor-pointer border-b py-2">Services</li>
+      <li class="cursor-pointer border-b py-2">About</li>
+      <li class="cursor-pointer border-b py-2">Contact Us</li>
+      <li class="text-green-500 cursor-pointer border-b py-2">Login</li>
+      <li
+        class="bg-red-500 text-white cursor-pointer border-b border-black px-1 py-2"
+      >
+        Sign Up
+      </li>
+    </ul>
+    <img
+      src="./img/1860x1050-volvo-trucks-electric-range-eu-image.jpg"
+      alt="truck"
+      class="border border-black h-screen object-cover"
+    />
+    <article
+      class="border border-black text-center px-4 tracking-wider bg-yellow-300 xs360:py-4"
+    >
+      <h1 class="border py-2 text-base">News</h1>
+      <p class="border text-justify py-2 text-xs">
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Mollitia
+        laborum exercitationem pariatur fugiat ad nulla quisquam itaque magnam,
+        harum beatae dolor quod, voluptatibus dolore tenetur culpa ducimus
+        recusandae odit corporis! Illo non hic iste maxime rem cupiditate
+        aspernatur architecto expedita eveniet debitis quaerat error ad velit,
+        eum nulla minus culpa.
+      </p>
+      <button
+        class="border py-1 my-2 text-sm bg-yellow-500 px-2 rounded focus:outline-none"
+      >
+        read more
+      </button>
+    </article>
+    <section
+      class="grid grid-flow-row justify-center py-16 gap-y-16 border border-black bg-no-repeat bg-gray-300"
+    >
+      <img
+        src="./img/1860x1050-pressrelease-electric-heavy-duty-trucks-image3.jpg"
+        alt="truck_1"
+        class="h-40 w-56 object-cover border border-black"
+      />
+      <img
+        src="./img/6a00d8341c4fbe53ef0224df38e907200b-550wi.png"
+        alt="truck_2"
+        class="h-40 w-56 object-cover border border-black"
+      />
+      <img
+        src="./img/b4fef6b993247fad_800x800ar.jpg"
+        alt="truck_3"
+        class="h-40 w-56 object-cover border border-black"
+      />
+      <img
+        src="./img/Ec43WmqWsAQY8vS.jpg"
+        alt="truck_4"
+        class="h-40 w-56 object-cover border border-black"
+      />
+      <img
+        src="./img/TuSimple_Self_Drving_Truck_4_copy.jpg"
+        alt="truck_5"
+        class="h-40 w-56 object-cover border border-black"
+      />
+      <img
+        src="./img/western-star_0.jpg"
+        alt="truck_6"
+        class="h-40 w-56 object-cover border border-black"
+      />
+    </section>
+    <footer class="border border-black">
+      <p class="text-xs text-center bg-blue-500 text-white tracking-wider pb-1">
+        Copyright &#169; 2021. All Rights Reserved
+      </p>
+    </footer>
   </body>
 </html>
