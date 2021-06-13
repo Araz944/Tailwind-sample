@@ -15,102 +15,115 @@
   </head>
   <body>
     <nav
-      class="flex px-6 justify-between h-20 w-full bg-blue-500 xs320:h-14 xs400:h-16 xs400:pr-8"
+      class="flex px-6 justify-between h-20 w-full bg-blue-500 xs320:h-14 xs400:h-16 xs400:pr-8 xs580:pr-10 md840:px-0 md840:h-20 md840:z-0 md840:absolute"
     >
       <img
         src="./img/logo_transparent.png"
         alt="logo"
-        class="object-cover bg-no-repeat bg-center w-1/3 xs320:h-14 xs400:h-16"
+        class="object-cover bg-no-repeat bg-center w-1/3 xs320:h-14 xs400:h-16 md840:h-20"
       />
-      <div class="text-3xl my-auto align-middle">&#9776;</div>
+      <div class="text-3xl my-auto align-middle xs580:text-4xl md840:hidden">
+        &#9776;
+      </div>
     </nav>
     <ul
-      class="uppercase my-auto pb-5 font-medium tracking-wider bg-yellow-800 px-6 text-base tracking-widest text-gray-700 xs360:px-8 xs400:pb-6 xs460:px-10 xs460:text-lg xs460:pb-8"
+      class="uppercase my-auto pb-5 font-medium tracking-wider bg-yellow-800 px-6 text-base tracking-widest text-gray-700 xs360:px-8 xs400:pb-6 xs460:px-10 xs460:text-lg xs460:pb-8 md840:flex md840:flex-row md840:bg-transparent md840:justify-end md840:text-sm md840:tracking-wide md840:gap-x-3 md840:px-4 md840:z-10 md840:sticky md840:pb-0 md840:pt-4 md840:pb-3 md930:gap-x-4 md930:px-6"
     >
-      <li class="cursor-pointer border-b py-3 xs460:py-4">
+      <li class="cursor-pointer border-b py-3 xs460:py-4 md840:border-b-0">
         <i class="fas fa-rss-square"></i>
         News
       </li>
-      <li class="cursor-pointer border-b py-3 xs460:py-4">
+      <li class="cursor-pointer border-b py-3 xs460:py-4 md840:border-b-0">
         <i class="fas fa-cog"></i>
         Services
       </li>
-      <li class="cursor-pointer border-b py-3 xs460:py-4">
+      <li class="cursor-pointer border-b py-3 xs460:py-4 md840:border-b-0">
         <i class="fas fa-address-card"></i>
         About
       </li>
-      <li class="cursor-pointer border-b py-3 xs460:py-4">
+      <li class="cursor-pointer border-b py-3 xs460:py-4 md840:border-b-0">
         <i class="fas fa-map-marker-alt"></i>
         Contact Us
       </li>
-      <li class="text-green-500 cursor-pointer border-b py-3 xs460:py-4">
+      <li
+        class="text-green-500 cursor-pointer border-b py-3 xs460:py-4 md840:border-b-0 md840:rounded-full md840:bg-gray-50 md840:px-3"
+      >
         <i class="fas fa-warehouse"></i>
         Login
       </li>
-      <li class="bg-red-500 text-white cursor-pointer px-1 py-3 xs460:py-4">
+      <li
+        class="bg-red-500 text-white cursor-pointer px-1 py-3 xs460:py-4 md840:rounded-full"
+      >
         <i class="fas fa-user-plus"></i>
         Sign Up
       </li>
     </ul>
-    <img
-      src="./img/1860x1050-volvo-trucks-electric-range-eu-image.jpg"
-      alt="truck"
-      class="h-screen object-cover"
-    />
-    <article
-      class="text-center px-8 tracking-wider bg-yellow-200 py-8 xs360:px-10 xs460:px-12 xs460:py-12"
-    >
-      <h1 class="py-2 text-xl xs400:text-2xl">News</h1>
-      <p
-        class="text-justify py-2 text-base xs400:text-lg xs460:text-xl xs460:leading-9"
+    <div class="lg1020:grid">
+      <img
+        src="./img/1860x1050-volvo-trucks-electric-range-eu-image.jpg"
+        alt="truck"
+        class="h-screen object-cover w-full"
+      />
+      <article
+        class="text-center px-8 tracking-wider bg-yellow-200 py-8 xs360:px-10 xs460:px-12 xs460:py-12 md930:px-16 md930:py-16"
       >
-        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Mollitia
-        laborum exercitationem pariatur fugiat ad nulla quisquam itaque magnam,
-        harum beatae dolor quod, voluptatibus dolore tenetur culpa ducimus
-        recusandae odit corporis! Illo non hic iste maxime rem cupiditate
-        aspernatur architecto expedita eveniet debitis quaerat error ad velit,
-        eum nulla minus culpa.
-      </p>
-      <button
-        class="border py-1 my-2 mt-5 text-base bg-yellow-400 px-2 rounded focus:outline-none xs360:mb-4 xs460:px-3 xs460:tracking-wide"
+        <h1
+          class="py-2 text-xl xs400:text-2xl xs580:text-3xl md930:font-medium tracking-widest"
+        >
+          News
+        </h1>
+        <p
+          class="text-justify py-2 text-base xs400:text-lg xs460:text-xl xs460:leading-9 md930:py-6 md930:leading-10"
+        >
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Mollitia
+          laborum exercitationem pariatur fugiat ad nulla quisquam itaque
+          magnam, harum beatae dolor quod, voluptatibus dolore tenetur culpa
+          ducimus recusandae odit corporis! Illo non hic iste maxime rem
+          cupiditate aspernatur architecto expedita eveniet debitis quaerat
+          error ad velit, eum nulla minus culpa.
+        </p>
+        <button
+          class="border py-1 my-2 mt-5 text-base bg-yellow-400 px-2 rounded focus:outline-none xs360:mb-4 xs460:px-3 xs460:tracking-wide md840:my-4 md840:mt-6"
+        >
+          read more
+        </button>
+      </article>
+      <section
+        class="grid grid-flow-row justify-center py-16 gap-y-16 bg-no-repeat bg-gray-300 xs580:py-20 sm640:gap-y-20 md760:grid-cols-2 md760:justify-items-center md760:px-8 md930:px-12"
       >
-        read more
-      </button>
-    </article>
-    <section
-      class="grid grid-flow-row justify-center py-16 gap-y-16 bg-no-repeat bg-gray-300"
-    >
-      <img
-        src="./img/1860x1050-pressrelease-electric-heavy-duty-trucks-image3.jpg"
-        alt="truck_1"
-        class="h-40 w-56 object-cover border-double border-4 border-blue-300 xs460:h-52 xs460:w-72"
-      />
-      <img
-        src="./img/6a00d8341c4fbe53ef0224df38e907200b-550wi.png"
-        alt="truck_2"
-        class="h-40 w-56 object-cover border-double border-4 border-blue-300 xs460:h-52 xs460:w-72"
-      />
-      <img
-        src="./img/b4fef6b993247fad_800x800ar.jpg"
-        alt="truck_3"
-        class="h-40 w-56 object-cover border-double border-4 border-blue-300 xs460:h-52 xs460:w-72"
-      />
-      <img
-        src="./img/Ec43WmqWsAQY8vS.jpg"
-        alt="truck_4"
-        class="h-40 w-56 object-cover border-double border-4 border-blue-300 xs460:h-52 xs460:w-72"
-      />
-      <img
-        src="./img/TuSimple_Self_Drving_Truck_4_copy.jpg"
-        alt="truck_5"
-        class="h-40 w-56 object-cover border-double border-4 border-blue-300 xs460:h-52 xs460:w-72"
-      />
-      <img
-        src="./img/western-star_0.jpg"
-        alt="truck_6"
-        class="h-40 w-56 object-cover border-double border-4 border-blue-300 xs460:h-52 xs460:w-72"
-      />
-    </section>
+        <img
+          src="./img/1860x1050-pressrelease-electric-heavy-duty-trucks-image3.jpg"
+          alt="truck_1"
+          class="h-40 w-56 object-cover border-double border-4 border-blue-300 xs460:h-52 xs460:w-72 xs580:h-60 xs580:w-96 xs580:border-8 md760:w-72 md930:w-80"
+        />
+        <img
+          src="./img/6a00d8341c4fbe53ef0224df38e907200b-550wi.png"
+          alt="truck_2"
+          class="h-40 w-56 object-cover border-double border-4 border-blue-300 xs460:h-52 xs460:w-72 xs580:h-60 xs580:w-96 xs580:border-8 md760:w-72 md930:w-80"
+        />
+        <img
+          src="./img/b4fef6b993247fad_800x800ar.jpg"
+          alt="truck_3"
+          class="h-40 w-56 object-cover border-double border-4 border-blue-300 xs460:h-52 xs460:w-72 xs580:h-60 xs580:w-96 xs580:border-8 md760:w-72 md930:w-80"
+        />
+        <img
+          src="./img/Ec43WmqWsAQY8vS.jpg"
+          alt="truck_4"
+          class="h-40 w-56 object-cover border-double border-4 border-blue-300 xs460:h-52 xs460:w-72 xs580:h-60 xs580:w-96 xs580:border-8 md760:w-72 md930:w-80"
+        />
+        <img
+          src="./img/TuSimple_Self_Drving_Truck_4_copy.jpg"
+          alt="truck_5"
+          class="h-40 w-56 object-cover border-double border-4 border-blue-300 xs460:h-52 xs460:w-72 xs580:h-60 xs580:w-96 xs580:border-8 md760:w-72 md930:w-80"
+        />
+        <img
+          src="./img/western-star_0.jpg"
+          alt="truck_6"
+          class="h-40 w-56 object-cover border-double border-4 border-blue-300 xs460:h-52 xs460:w-72 xs580:h-60 xs580:w-96 xs580:border-8 md760:w-72 md930:w-80"
+        />
+      </section>
+      <div>About Container</div>
+    </div>
     <footer>
       <p
         class="text-xs text-center bg-blue-500 text-white tracking-wider py-1 xs400:py-2"
