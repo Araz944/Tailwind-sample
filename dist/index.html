@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="theme-color" content="#3B82F6" />
     <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="custom.css" />
     <link
       rel="stylesheet"
       href="https://use.fontawesome.com/releases/v5.5.0/css/all.css"
@@ -12,6 +13,10 @@
       crossorigin="anonymous"
     />
     <link rel="shortcut icon" type="image/x-icon" href="./img/wind.svg" />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
     <title>Tailwind App</title>
   </head>
   <body>
@@ -21,53 +26,53 @@
       <img
         src="./img/logo_transparent.png"
         alt="logo"
-        class="object-cover bg-no-repeat bg-center w-1/3 xs320:h-14 xs400:h-16 md840:h-20 lg1020:w-1/4"
+        class="object-cover bg-no-repeat bg-center w-1/3 xs320:h-14 xs400:h-16 md840:h-20 lg1020:w-1/4 lg1180:px-8"
       />
       <div class="text-3xl my-auto align-middle xs580:text-4xl md840:hidden">
         &#9776;
       </div>
     </nav>
     <ul
-      class="uppercase my-auto pb-5 font-medium tracking-wider bg-yellow-800 px-6 text-base tracking-widest text-gray-700 xs360:px-8 xs400:pb-6 xs460:px-10 xs460:text-lg xs460:pb-8 md840:flex md840:flex-row md840:bg-transparent md840:justify-end md840:text-sm md840:tracking-wide md840:gap-x-3 md840:px-4 md840:z-10 md840:sticky md840:pb-0 md840:pt-4 md840:pb-3 md930:gap-x-4 md930:px-6 lg1020:text-base lg1020:pt-3 lg1020:gap-x-5"
+      class="uppercase my-auto pb-5 font-medium tracking-wider bg-yellow-800 px-6 text-base tracking-widest text-gray-700 xs360:px-8 xs400:pb-6 xs460:px-10 xs460:text-lg xs460:pb-8 md840:flex md840:flex-row md840:bg-transparent md840:justify-end md840:text-sm md840:tracking-wide md840:gap-x-3 md840:px-4 md840:z-10 md840:sticky md840:pb-0 md840:pt-4 md840:pb-3 md930:gap-x-4 md930:px-6 lg1020:text-base lg1020:pt-3 lg1020:gap-x-5 lg1100:text-lg lg1100:pb-2 lg1100:gap-x-6 lg1180:px-10 lg1180:pt-4 lg1180:pb-3 xl1360:gap-x-10 xl1440:px-12 xl1440:text-xl"
     >
       <li
-        class="cursor-pointer border-b py-3 xs460:py-4 md840:border-b-0 lg1020:cursor-pointer"
+        class="customUnderline cursor-pointer border-b py-3 xs460:py-4 md840:border-b-0 lg1020:cursor-pointer lg1180:py-3"
       >
         <i class="fas fa-rss-square"></i>
         News
         <span
-          class="animate-ping absolute h-3 w-3 rounded-full bg-green-400 opacity-75 my-1.5 xs460:my-2 md840:my-0.5 lg1020:my-1.5"
+          class="animate-ping absolute h-3 w-3 rounded-full bg-green-400 opacity-75 my-1.5 xs460:my-2 md840:my-0.5 lg1020:my-1.5 lg1100:my-2 lg1100:mx-0.5 lg1180:h-3.5 lg1180:w-3.5 lg1180:mx-0"
         ></span>
         <span
-          class="relative inline-flex rounded-full h-3 w-3 bg-green-500"
+          class="relative inline-flex rounded-full h-3 w-3 bg-green-500 lg1100:h-3.5 lg1100:w-3.5"
         ></span>
       </li>
       <li
-        class="cursor-pointer border-b py-3 xs460:py-4 md840:border-b-0 lg1020:cursor-pointer"
+        class="customUnderline cursor-pointer border-b py-3 xs460:py-4 md840:border-b-0 md840:customUnderline lg1020:cursor-pointer lg1180:py-3"
       >
         <i class="fas fa-cog"></i>
         Services
       </li>
       <li
-        class="cursor-pointer border-b py-3 xs460:py-4 md840:border-b-0 lg1020:cursor-pointer"
+        class="customUnderline cursor-pointer border-b py-3 xs460:py-4 md840:border-b-0 lg1020:cursor-pointer lg1180:py-3"
       >
         <i class="fas fa-address-card"></i>
         About
       </li>
       <li
-        class="cursor-pointer border-b py-3 xs460:py-4 md840:border-b-0 lg1020:cursor-pointer"
+        class="customUnderline cursor-pointer border-b py-3 xs460:py-4 md840:border-b-0 lg1020:cursor-pointer lg1180:py-3"
       >
         <i class="fas fa-map-marker-alt"></i>
         Contact Us
       </li>
       <li
-        class="text-green-500 cursor-pointer border-b py-3 xs460:py-4 md840:border-b-0 md840:rounded-full md840:bg-gray-50 md840:px-3 lg1020:cursor-pointer"
+        class="text-green-500 cursor-pointer border-b py-3 xs460:py-4 md840:border-b-0 md840:rounded-full md840:bg-gray-50 md840:px-3 lg1020:cursor-pointer lg1180:py-3"
       >
         <i class="fas fa-warehouse"></i>
         Login
       </li>
       <li
-        class="bg-red-500 text-white cursor-pointer px-1 py-3 xs460:py-4 md840:rounded-full lg1020:cursor-pointer"
+        class="bg-red-500 text-white cursor-pointer px-1 py-3 xs460:py-4 md840:rounded-full lg1020:cursor-pointer lg1180:py-3 xl1440:px-2"
       >
         <i class="fas fa-user-plus"></i>
         Sign Up
@@ -76,21 +81,110 @@
     <div
       class="lg1020:grid lg1020:grid-rows-1 lg1020:grid-cols-12 lg1020:h-auto"
     >
-      <img
-        src="./img/1860x1050-volvo-trucks-electric-range-eu-image.jpg"
-        alt="truck"
-        class="h-screen object-cover w-full lg1020:col-start-4 lg1020:col-end-13 lg1020:min-h-full"
-      />
+      <!-- Slider main container -->
+      <div
+        class="swiper-container h-screen object-cover w-full lg1020:col-start-4 lg1020:col-end-13 lg1020:min-h-full"
+      >
+        <!-- Additional required wrapper -->
+        <div class="swiper-wrapper">
+          <!-- Slides -->
+          <div class="swiper-slide">
+            <section class="absolute xs360:p-16 md840:w-3/5">
+              <div
+                class="text-6xl mb-3 text-blue-500"
+                data-swiper-parallax="-300"
+              >
+                Heavy Trucks
+              </div>
+              <div
+                class="text-2xl font-medium mb-1 tracking-wide"
+                data-swiper-parallax="-200"
+              >
+                Electrical Trucks Are Available Now
+              </div>
+              <div
+                class="text-sm font-medium tracking-wider leading-6"
+                data-swiper-parallax="-100"
+              >
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  Aliquam dictum mattis velit, sit amet faucibus felis iaculis
+                  nec. Nulla laoreet justo vitae porttitor.
+                </p>
+              </div>
+            </section>
+            <img
+              src="./img/1860x1050-volvo-trucks-electric-range-eu-image.jpg"
+              alt="truck"
+              class="h-screen object-cover w-full lg1020:col-start-4 lg1020:col-end-13 lg1020:min-h-full"
+            />
+          </div>
+          <div class="swiper-slide">
+            <img
+              src="./img/DAF-XF-CF-Hero-scaled.jpg"
+              alt="truck"
+              class="h-screen object-cover w-full lg1020:col-start-4 lg1020:col-end-13 lg1020:min-h-full"
+            />
+          </div>
+          <div class="swiper-slide">
+            <section class="absolute xs360:p-16 md840:w-3/5">
+              <div
+                class="text-6xl mb-3 text-blue-500"
+                data-swiper-parallax="-300"
+              >
+                Futuristic Design
+              </div>
+              <div
+                class="text-2xl font-medium mb-2 tracking-wide"
+                data-swiper-parallax="-200"
+              >
+                Intended for a long way journey
+              </div>
+              <div
+                class="text-sm text-yellow-300 font-black tracking-wider leading-6"
+                data-swiper-parallax="-100"
+              >
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  Aliquam dictum mattis velit, sit amet faucibus felis iaculis
+                  nec. Nulla laoreet justo vitae porttitor.
+                </p>
+              </div>
+            </section>
+            <img
+              src="./img/fe04fd241b3453ffbbd3deb6ae47b067.jpg"
+              alt="truck"
+              class="h-screen object-cover w-full lg1020:col-start-4 lg1020:col-end-13 lg1020:min-h-full"
+            />
+          </div>
+          <div class="swiper-slide">
+            <img
+              src="./img/20190625122850-7-Steps-To-Starting-A-Transport-And-Logistics-Business-4000pxW-X-2670pxH-copy.jpeg"
+              alt="truck"
+              class="h-screen object-cover w-full lg1020:col-start-4 lg1020:col-end-13 lg1020:min-h-full"
+            />
+          </div>
+        </div>
+        <!-- If we need pagination -->
+        <div class="swiper-pagination"></div>
+
+        <!-- If we need navigation buttons -->
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+
+        <!-- If we need scrollbar -->
+        <!-- <div class="swiper-scrollbar"></div> -->
+      </div>
       <article
-        class="text-center px-8 tracking-wider bg-yellow-200 py-8 xs360:px-10 xs460:px-12 xs460:py-12 md930:px-16 md930:py-16 lg1020:col-start-1 lg1020:col-end-4 lg1020:row-start-1 lg1020:self-start lg1020:sticky lg1020:top-0 lg1020:border-r-10 border-yellow-300 lg1020:px-8 lg1020:py-8 lg1020:h-full"
+        class="text-center px-8 tracking-wider py-8 bg-gradient-to-r from-yellow-100 to-yellow-500 xs360:px-10 xs460:px-12 xs460:py-12 md930:px-16 md930:py-16 lg1020:col-start-1 lg1020:col-end-4 lg1020:row-start-1 lg1020:self-start lg1020:sticky lg1020:top-0 lg1020:border-r-10 border-yellow-300 lg1020:px-8 lg1020:py-8 lg1020:h-full lg1180:px-10 2xl:border-r-12"
       >
         <h1
-          class="py-2 text-xl xs400:text-2xl xs580:text-3xl md930:font-medium tracking-widest lg1020:text-left lg1020:text-xl"
+          class="py-2 text-xl xs400:text-2xl xs580:text-3xl md930:font-medium tracking-widest lg1020:text-left lg1020:text-xl 2xl:text-3xl"
         >
           News
         </h1>
         <p
-          class="text-justify py-2 text-base xs400:text-lg xs460:text-xl xs460:leading-9 md930:py-6 md930:leading-10 lg1020:text-sm lg1020:py-4 lg1020:h-3/4"
+          class="text-justify py-2 text-base xs400:text-lg xs460:text-xl xs460:leading-9 md930:py-6 md930:leading-10 lg1020:text-sm lg1020:py-4 lg1020:h-3/4 lg1100:text-base 2xl:text-xl"
         >
           Lorem ipsum dolor sit, amet consectetur adipisicing elit. Mollitia
           laborum exercitationem pariatur fugiat ad nulla quisquam itaque
@@ -100,43 +194,43 @@
           error ad velit, eum nulla minus culpa.
         </p>
         <button
-          class="border py-1 my-2 mt-5 text-base bg-yellow-400 px-2 rounded focus:outline-none xs360:mb-4 xs460:px-3 xs460:tracking-wide md840:my-4 md840:mt-6 lg1020:text-xs"
+          class="border py-1 my-2 mt-5 text-base bg-gradient-to-r from-yellow-500 to-yellow-200 px-2 rounded focus:outline-none xs360:mb-4 xs460:px-3 xs460:tracking-wide md840:my-4 md840:mt-6 lg1020:text-xs 2xl:text-sm"
         >
           read more
         </button>
       </article>
       <section
-        class="grid grid-flow-row justify-center py-16 gap-y-16 bg-no-repeat bg-gray-300 xs580:py-20 sm640:gap-y-20 md760:grid-cols-2 md760:justify-items-center md760:px-8 md930:px-12 lg1020:col-span-2 lg1020:col-start-4 lg1020:col-end-13 lg1020:gap-x-4 lg1020:gap-y-12 lg1020:items-center"
+        class="grid grid-flow-row justify-center py-16 gap-y-16 bg-no-repeat bg-gradient-to-r from-blue-500 to-gray-50 xs580:py-20 sm640:gap-y-20 md760:grid-cols-2 md760:justify-items-center md760:px-8 md930:px-12 lg1020:col-span-2 lg1020:col-start-4 lg1020:col-end-13 lg1020:gap-x-4 lg1020:gap-y-12 lg1020:items-center lg1100:gap-y-16 lg1180:px-16 lg1180:py-28 xl1360:grid-cols-3"
       >
         <img
           src="./img/1860x1050-pressrelease-electric-heavy-duty-trucks-image3.jpg"
           alt="truck_1"
-          class="h-40 w-56 object-cover border-double border-4 border-blue-300 xs460:h-52 xs460:w-72 xs580:h-60 xs580:w-96 xs580:border-8 md760:w-72 md930:w-80 lg1020:border-4 lg1020:h-40 lg1020:w-56"
+          class="h-40 w-56 object-cover border-double border-4 border-blue-300 xs460:h-52 xs460:w-72 xs580:h-60 xs580:w-96 xs580:border-8 md760:w-72 md930:w-80 lg1020:border-4 lg1020:h-40 lg1020:w-56 lg1100:h-44 lg1100:w-72 lg1180:border-12 lg1180:h-48 xl1360:w-64"
         />
         <img
           src="./img/6a00d8341c4fbe53ef0224df38e907200b-550wi.png"
           alt="truck_2"
-          class="h-40 w-56 object-cover border-double border-4 border-blue-300 xs460:h-52 xs460:w-72 xs580:h-60 xs580:w-96 xs580:border-8 md760:w-72 md930:w-80 lg1020:border-4 lg1020:h-40 lg1020:w-56"
+          class="h-40 w-56 object-cover border-double border-4 border-blue-300 xs460:h-52 xs460:w-72 xs580:h-60 xs580:w-96 xs580:border-8 md760:w-72 md930:w-80 lg1020:border-4 lg1020:h-40 lg1020:w-56 lg1100:h-44 lg1100:w-72 lg1180:border-12 lg1180:h-48 xl1360:w-64"
         />
         <img
           src="./img/b4fef6b993247fad_800x800ar.jpg"
           alt="truck_3"
-          class="h-40 w-56 object-cover border-double border-4 border-blue-300 xs460:h-52 xs460:w-72 xs580:h-60 xs580:w-96 xs580:border-8 md760:w-72 md930:w-80 lg1020:border-4 lg1020:h-40 lg1020:w-56"
+          class="h-40 w-56 object-cover border-double border-4 border-blue-300 xs460:h-52 xs460:w-72 xs580:h-60 xs580:w-96 xs580:border-8 md760:w-72 md930:w-80 lg1020:border-4 lg1020:h-40 lg1020:w-56 lg1100:h-44 lg1100:w-72 lg1180:border-12 lg1180:h-48 xl1360:w-64"
         />
         <img
           src="./img/Ec43WmqWsAQY8vS.jpg"
           alt="truck_4"
-          class="h-40 w-56 object-cover border-double border-4 border-blue-300 xs460:h-52 xs460:w-72 xs580:h-60 xs580:w-96 xs580:border-8 md760:w-72 md930:w-80 lg1020:border-4 lg1020:h-40 lg1020:w-56"
+          class="h-40 w-56 object-cover border-double border-4 border-blue-300 xs460:h-52 xs460:w-72 xs580:h-60 xs580:w-96 xs580:border-8 md760:w-72 md930:w-80 lg1020:border-4 lg1020:h-40 lg1020:w-56 lg1100:h-44 lg1100:w-72 lg1180:border-12 lg1180:h-48 xl1360:w-64"
         />
         <img
           src="./img/TuSimple_Self_Drving_Truck_4_copy.jpg"
           alt="truck_5"
-          class="h-40 w-56 object-cover border-double border-4 border-blue-300 xs460:h-52 xs460:w-72 xs580:h-60 xs580:w-96 xs580:border-8 md760:w-72 md930:w-80 lg1020:border-4 lg1020:h-40 lg1020:w-56"
+          class="h-40 w-56 object-cover border-double border-4 border-blue-300 xs460:h-52 xs460:w-72 xs580:h-60 xs580:w-96 xs580:border-8 md760:w-72 md930:w-80 lg1020:border-4 lg1020:h-40 lg1020:w-56 lg1100:h-44 lg1100:w-72 lg1180:border-12 lg1180:h-48 xl1360:w-64"
         />
         <img
           src="./img/western-star_0.jpg"
           alt="truck_6"
-          class="h-40 w-56 object-cover border-double border-4 border-blue-300 xs460:h-52 xs460:w-72 xs580:h-60 xs580:w-96 xs580:border-8 md760:w-72 md930:w-80 lg1020:border-4 lg1020:h-40 lg1020:w-56"
+          class="h-40 w-56 object-cover border-double border-4 border-blue-300 xs460:h-52 xs460:w-72 xs580:h-60 xs580:w-96 xs580:border-8 md760:w-72 md930:w-80 lg1020:border-4 lg1020:h-40 lg1020:w-56 lg1100:h-44 lg1100:w-72 lg1180:border-12 lg1180:h-48 xl1360:w-64"
         />
       </section>
       <div
@@ -171,5 +265,44 @@
         Copyright &#169; 2021. All Rights Reserved
       </p>
     </footer>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script>
+      const swiper = new Swiper(".swiper-container", {
+        // Optional parameters
+
+        // effect: "cube",
+        // cubeEffect: {
+        //   shadow: true,
+        //   slideShadows: true,
+        //   shadowOffset: 20,
+        //   shadowScale: 0.94,
+        // },
+        effect: "fade",
+        loop: true,
+        autoplay: {
+          delay: 5000,
+          disableOnInteraction: false,
+        },
+        speed: 600,
+        parallax: true,
+
+        // If we need pagination
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+
+        // Navigation arrows
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+
+        // And if we need scrollbar
+        scrollbar: {
+          el: ".swiper-scrollbar",
+        },
+      });
+    </script>
   </body>
 </html>
