@@ -15,10 +15,12 @@ module.exports = {
       md840: "840px",
       md930: "930px",
       lg1020: "1020px",
-
-      xl: "1280px",
+      lg1100: "1100px",
+      lg1180: "1180px",
+      xl1280: "1280px",
+      xl1360: "1360px",
+      xl1440: "1440px",
       "2xl": "1536px",
-      // => @media (min-width: 1536px) { ... }
     },
     borderWidth: {
       0: "0",
