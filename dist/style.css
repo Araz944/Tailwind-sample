@@ -642,9 +642,9 @@ video {
   font-weight: 900;
 }
 
-.text-base {
-  font-size: 1rem;
-  line-height: 1.5rem;
+.text-xl {
+  font-size: 1.25rem;
+  line-height: 1.75rem;
 }
 
 .text-2xl {
@@ -695,9 +695,9 @@ video {
   --tw-ring-shadow: 0 0 #0000;
 }
 
-.text-yellow-300 {
+.text-yellow-500 {
   --tw-text-opacity: 1;
-  color: rgba(252, 211, 77, var(--tw-text-opacity));
+  color: rgba(245, 158, 11, var(--tw-text-opacity));
 }
 
 .text-blue-500 {
@@ -824,6 +824,7 @@ video {
 .applyLogo {
   background-position: center;
   background-repeat: no-repeat;
+  cursor: pointer;
   -o-object-fit: cover;
      object-fit: cover;
   width: 33.333333%;
@@ -1000,6 +1001,7 @@ video {
 .applyList {
   border-bottom-width: 1px;
   cursor: pointer;
+  font-weight: 600;
   padding-top: 0.75rem;
   padding-bottom: 0.75rem;
 }
