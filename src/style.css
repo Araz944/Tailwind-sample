@@ -19,7 +19,7 @@
 }
 
 .applyList {
-  @apply cursor-pointer border-b-1 py-3 xs460:py-4 md840:border-b-0 lg1180:py-3;
+  @apply cursor-pointer font-semibold border-b-1 py-3 xs460:py-4 md840:border-b-0 lg1180:py-3;
 }
 
 .applyPing {
